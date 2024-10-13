@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px; /* Mantém a largura máxima para telas grandes */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+#sobre {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: column; /* Altera a direção do flex para coluna em dispositivos pequenos */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+#sobre img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1pt;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#contato {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#contato a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#contato a:hover {
+    transform: scale(1.1);
+}
+
+#contato img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+#contato a:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* Para tablets e dispositivos móveis */
+    nav ul {
+        flex-direction: column; /* Muda a direção da lista para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona espaçamento entre os itens */
+    }
+
+    #sobre {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #sobre img {
+        width: 150px; /* Reduz a largura da imagem */
+        height: 150px; /* Reduz a altura da imagem */
+    }
+
+    footer {
+        position: static; /* Remove a posição fixa em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) { /* Para dispositivos móveis menores */
+    nav ul li {
+        margin: 5px 0; /* Ajusta o espaçamento entre os itens */
+    }
+
+    #contato img {
+        width: 60px; /* Reduz a largura dos ícones de contato */
+        height: 60px; /* Reduz a altura dos ícones de contato */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="Projeto.html">Projetos</a></li>
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="sobre">
+            <img src="Clube.jpg" alt="Minha foto">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>Olá, sou Vinicius Marques Bertholdi, um jovem de 23 anos apaixonado por tecnologia e inovação. Natural de São Sebastião do Paraíso, estou cursando Sistemas de Informação na Universidade Estadual de Minas Gerais (UEMG), onde tenho desenvolvido minhas habilidades em programação, análise de dados e manutenção de sistemas.
+
+                    Minha formação inclui experiências práticas em manutenção mecânica e elétrica, adquiridas por meio de cursos profissionalizantes no SENAI. Hoje, foco minha carreira na área de tecnologia, especificamente na área de Banco de Dados, onde gosto muito de trabalhar.
+                    
+                    Neste portfólio, compartilho meus projetos, cursos e conquistas para que você possa conhecer melhor o meu trabalho. Estou sempre em busca de novos conhecimentos e oportunidades de crescimento profissional. Se você deseja entrar em contato, minhas redes sociais estão Logo abaixo.
+                    </p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-marques-bertholdi-78034520a/">
+                <img src="linkedin.png" alt="LinkedIn" style="width: 75px; height: 75px;">
+            </a>
+            <a href="https://w.app/DsS3Hn">
+                <img src="zap.png" alt="WhatsApp" style="width: 80px; height: 80px;">
+            </a>
+            <a href="https://www.instagram.com/vinibertholdi/">
+                <img src="Instagram.png" alt="WhatsApp" style="width: 75px; height: 75px;">
+            </a>
+        </section>
+        
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Portfólio Vinicius Marques Bertholdi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            const targetId = href.substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                e.preventDefault();
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
